@@ -1,5 +1,4 @@
 import requests
-import json
 
 base_albums_url = "https://jsonplaceholder.typicode.com/photos"
 

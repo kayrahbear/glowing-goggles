@@ -21,8 +21,6 @@ class TestCliFunctions(unittest.TestCase):
 
         response = get_album_data("1")
 
-        print(response)
-
         self.assertEqual(len(response), 1)
         self.assertEqual(response[0]["title"], "A Very Lovely Photo")
 

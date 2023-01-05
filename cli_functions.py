@@ -4,7 +4,6 @@ base_albums_url = "https://jsonplaceholder.typicode.com/photos"
 
 
 def get_album_data(album_selection):
-
     if "-" in album_selection:
         range_start, range_end = album_selection.split("-")
         album_stream = requests.get(f"{base_albums_url}?albumId_gte={range_start}&albumId_lte={range_end}")
@@ -17,8 +16,3 @@ def get_album_data(album_selection):
         return album_stream.json()
     else:
         return None
-
-
-
-
-
